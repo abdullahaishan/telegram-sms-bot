@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: telegram-sms-bot
+    env: node
+    region: frankfurt  # أو virginia / ohio
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_KEY
+        sync: false
+      - key: ADMIN_USERNAME
+        sync: false

@@ -1,0 +1,27 @@
+{
+  "name": "telegram-sms-bot",
+  "version": "1.0.0",
+  "description": "بوت تلجرام لإدارة أرقام SMS",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "keep-alive": "node keep-alive.js",
+    "dev": "nodemon src/index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.64.0",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "@supabase/supabase-js": "^2.38.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
